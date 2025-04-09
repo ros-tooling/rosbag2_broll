@@ -2,8 +2,8 @@
 Changelog for package rosbag2_storage_broll
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2025-04-09)
+------------------
 * Hardware decoding of frames (`#13 <https://github.com/ros-tooling/rosbag2_broll/issues/13>`_)
 * Fix ffmpeg 6 build and latest Rolling compatibility (`#10 <https://github.com/ros-tooling/rosbag2_broll/issues/10>`_)
 * Disable mcap (`#4 <https://github.com/ros-tooling/rosbag2_broll/issues/4>`_)
