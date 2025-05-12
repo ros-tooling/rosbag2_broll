@@ -2,8 +2,8 @@
 Changelog for package rosbag2_storage_broll
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2025-05-12)
+------------------
 * Support Kilted with CI and minor build fix (`#6 <https://github.com/ros-tooling/rosbag2_broll/issues/6>`_)
 * Contributors: Emerson Knapp
 

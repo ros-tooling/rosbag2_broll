@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>broll</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <description>B-Roll utility library for interacting with video stream data in the context of rosbag2</description>
   <maintainer email="emerson.knapp@bonsairobotics.ai">Emerson Knapp</maintainer>
   <license>Apache License 2.0</license>
