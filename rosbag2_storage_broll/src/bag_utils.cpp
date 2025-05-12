@@ -18,12 +18,12 @@
 #include "rclcpp/qos.hpp"
 #include "rosbag2_storage/yaml.hpp"
 #include "rosbag2_storage_broll/bag_utils.hpp"
-#if defined(ROS2_JAZZY) || defined(ROS2_ROLLING)
-#include "rosbag2_storage/qos.hpp"
-using Rosbag2QoS = rosbag2_storage::Rosbag2QoS;
-#else
+#if defined(ROS2_HUMBLE)
 #include "rosbag2_transport/qos.hpp"
 using Rosbag2QoS = rosbag2_transport::Rosbag2QoS;
+#else
+#include "rosbag2_storage/qos.hpp"
+using Rosbag2QoS = rosbag2_storage::Rosbag2QoS;
 #endif
 
 namespace rosbag2_storage_broll
