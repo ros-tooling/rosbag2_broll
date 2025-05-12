@@ -42,13 +42,13 @@ rosbag2_storage::TopicInformation create_topic_info(
   topic_info.topic_metadata.name = topic_name;
   topic_info.topic_metadata.type = type_name;
   topic_info.topic_metadata.serialization_format = "cdr";
-  #if defined(ROS2_JAZZY) || defined(ROS2_ROLLING)
-  topic_info.topic_metadata.offered_qos_profiles.push_back(qos_profile);
-  #else
+  #if defined(ROS2_HUMBLE)
   topic_info.topic_metadata.offered_qos_profiles = rosbag2_storage_broll::serialize_qos(
     {
       qos_profile
     });
+  #else
+  topic_info.topic_metadata.offered_qos_profiles.push_back(qos_profile);
   #endif
   topic_info.message_count = 1;
   return topic_info;
@@ -121,7 +121,7 @@ public:
   bool has_next() override;
   std::shared_ptr<rosbag2_storage::SerializedBagMessage> read_next() override;
   std::vector<rosbag2_storage::TopicMetadata> get_all_topics_and_types() override;
-  #if defined(ROS2_IRON) || defined(ROS2_JAZZY) || defined(ROS2_ROLLING)
+  #ifndef ROS2_HUMBLE
   // Iron interface additions
   bool set_read_order(const rosbag2_storage::ReadOrder & order) override;
   void get_all_message_definitions(
@@ -294,7 +294,7 @@ std::vector<rosbag2_storage::TopicMetadata> BRollStorage::get_all_topics_and_typ
   return topics;
 }
 
-#if defined(ROS2_IRON) || defined(ROS2_JAZZY) || defined(ROS2_ROLLING)
+#ifndef ROS2_HUMBLE
 // Iron interface additions
 bool BRollStorage::set_read_order(const rosbag2_storage::ReadOrder & order)
 {

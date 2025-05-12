@@ -7,14 +7,6 @@ endif()
 
 if("$ENV{ROS_DISTRO}" STREQUAL "humble")
   add_compile_definitions(ROS2_HUMBLE)
-elseif("$ENV{ROS_DISTRO}" STREQUAL "iron")
-  add_compile_definitions(ROS2_IRON)
-elseif("$ENV{ROS_DISTRO}" STREQUAL "jazzy")
-  add_compile_definitions(ROS2_JAZZY)
-elseif("$ENV{ROS_DISTRO}" STREQUAL "rolling")
-  add_compile_definitions(ROS2_ROLLING)
-else()
-  message(FATAL_ERROR "Unhandled ROS distro $ENV{ROS_DISTRO}")
 endif()
 
 # find dependencies
