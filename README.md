@@ -58,7 +58,7 @@ pub_decoded: false
 
 2. In a shell, run
 ```
-ros2 bag pay --read-ahead-queue-size 60 --storage-config-file config.yaml path/to/my/movie.mp4
+ros2 bag play --read-ahead-queue-size 60 --storage-config-file config.yaml path/to/my/movie.mp4
 ```
 
 3. In a separate shell, run
