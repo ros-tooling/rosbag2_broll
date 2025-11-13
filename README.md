@@ -8,6 +8,46 @@ Contains the following packages, see their respective `README.md` for more infor
 * [`broll`](./broll/) The main `broll` utility library
 * [`rosbag2_storage_broll`](./rosbag2_storage_broll/) A Rosbag2 storage implementation that can read encoded video frames from video files, and optionally decode them into raw images
 
+## Release Status
+
+<table width="100%">
+  <tr>
+    <th>ROS2 Distro</th>
+    <th>Humble</th>
+    <th>Jazzy</th>
+    <th>Kilted</th>
+    <th>Rolling</th>
+  </tr>
+  <tr>
+    <th>Release status</th>
+    <td> <!-- humble -->
+      <a href='https://build.ros2.org/job/Hdev__rosbag2_broll__ubuntu_jammy_amd64/'><img src='https://build.ros2.org/job/Hdev__rosbag2_broll__ubuntu_jammy_amd64/badge/icon?subject=Dev'></a><br/>
+      <a href='https://build.ros2.org/job/Hdoc__rosbag2_broll__ubuntu_jammy_amd64/'><img src='https://build.ros2.org/job/Hdoc__rosbag2_broll__ubuntu_jammy_amd64/badge/icon?subject=Doc'></a><br/>
+      <a href='https://build.ros2.org/job/Hbin_uJ64__broll__ubuntu_jammy_amd64__binary/'><img src='https://build.ros2.org/job/Hbin_uJ64__broll__ubuntu_jammy_amd64__binary/badge/icon?subject=broll'></a><br/>
+      <a href='https://build.ros2.org/job/Hbin_uJ64__rosbag2_storage_broll__ubuntu_jammy_amd64__binary/'><img src='https://build.ros2.org/job/Hbin_uJ64__rosbag2_storage_broll__ubuntu_jammy_amd64__binary/badge/icon?subject=rosbag2_storage_broll'></a>
+    </td>
+    <td> <!-- jazzy -->
+      <a href='https://build.ros2.org/job/Jdev__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Jdev__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Dev'></a><br/>
+      <a href='https://build.ros2.org/job/Jdoc__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Jdoc__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Doc'></a><br/>
+      <a href='https://build.ros2.org/job/Jbin_uN64__broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Jbin_uN64__broll__ubuntu_noble_amd64__binary/badge/icon?subject=broll'></a><br/>
+      <a href='https://build.ros2.org/job/Jbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Jbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/badge/icon?subject=rosbag2_storage_broll'></a>
+    </td>
+    <td> <!-- kilted -->
+      <a href='https://build.ros2.org/job/Kdev__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Kdev__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Dev'></a><br/>
+      <a href='https://build.ros2.org/job/Kdoc__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Kdoc__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Doc'></a><br/>
+      <a href='https://build.ros2.org/job/Kbin_uN64__broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Kbin_uN64__broll__ubuntu_noble_amd64__binary/badge/icon?subject=broll'></a><br/>
+      <a href='https://build.ros2.org/job/Kbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Kbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/badge/icon?subject=rosbag2_storage_broll'></a>
+    </td>
+    <td> <!-- rolling -->
+      <a href='https://build.ros2.org/job/Rdev__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Rdev__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Dev'></a><br/>
+      <a href='https://build.ros2.org/job/Rdoc__rosbag2_broll__ubuntu_noble_amd64/'><img src='https://build.ros2.org/job/Rdoc__rosbag2_broll__ubuntu_noble_amd64/badge/icon?subject=Doc'></a><br/>
+      <a href='https://build.ros2.org/job/Rbin_uN64__broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Rbin_uN64__broll__ubuntu_noble_amd64__binary/badge/icon?subject=broll'></a><br/>
+      <a href='https://build.ros2.org/job/Rbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/'><img src='https://build.ros2.org/job/Rbin_uN64__rosbag2_storage_broll__ubuntu_noble_amd64__binary/badge/icon?subject=rosbag2_storage_broll'></a>
+    </td>
+  </tr>
+</table>
+
+
 
 ## Sample workflows
 
